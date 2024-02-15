@@ -1,5 +1,6 @@
 import { cookies } from "next/headers";
 
 export function foo() {
-  cookies();
+  const c = cookies();
+  console.log(Object.fromEntries(c));
 }
