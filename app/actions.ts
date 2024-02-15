@@ -1,9 +1,7 @@
 "use server";
 
-import { foo } from "./lib";
+import { cookies } from "next/headers";
 
-const bar = foo();
+console.log("cookies", Object.fromEntries(cookies()));
 
-export async function runForm() {
-  console.log(bar);
-}
+export async function runForm() {}
